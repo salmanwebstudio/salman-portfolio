@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Menu | Saffron & Sage</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/data.js"></script>
+    <script defer src="../js/app.js"></script>
+    <script defer src="../js/motion.js"></script>
+</head>
+
+<body data-page="menu">
+    <div id="site-header"></div>
+    <main>
+        <section class="page-hero menu-hero">
+            <div class="section-kicker">FRESH FROM OUR KITCHEN</div>
+            <h1>Our <em>menu</em></h1>
+            <p>Thoughtful ingredients. Familiar favourites. A little something for everyone.</p>
+        </section>
+        <section class="section">
+            <div class="menu-tools">
+                <div id="category-filters" class="filter-list" aria-label="Menu categories"></div>
+                <label class="search-box">
+                    <span class="sr-only">Search dishes</span>
+                    <input id="menu-search" type="search" placeholder="Search dishes…"
+                        aria-label="Search dishes"></label>
+            </div>
+            <div id="menu-dishes" class="dish-grid"></div>
+            <p id="menu-empty" class="empty-state" hidden>No dishes found.</p>
+        </section>
+    </main>
+    <div id="site-footer"></div>
+</body>
+
+</html>
